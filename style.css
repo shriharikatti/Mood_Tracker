@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(315deg, #65005e, #3c84ce, #30e2e2, #ff1919);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 20px;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  h1 {
+    margin: 20px;
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  p {
+    margin: 20px;
+    color: #1a1a1a;
+  }
+  
+  .mood-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e3e3;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .mood-btn:hover {
+    background-color: #ccc;
+  }
+  
+  .mood-btn.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #save-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #020c15;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #save-btn:hover {
+    background-color: #353638;
+  }
+  
+  .filters {
+    margin: 20px 0;
+  }
+  
+  .filters button {
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filters button:hover {
+    background-color: #2980b9;
+  }
+  
+  .timeline {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #mood-list {
+    list-style: none;
+  }
+  
+  #mood-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #mood-list li:last-child {
+    border-bottom: none;
+  }
+
+  #timeline-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
